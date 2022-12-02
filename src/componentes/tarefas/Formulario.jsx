@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import Alerta from '../Alerta';
-import PostsContext from './TarefasContext';
+import TarefasContext from './TarefasContext';
 
 function Formulario() {
 
-    const { objeto, handleChange, acaoCadastrar,  alerta } = useContext(PostsContext);
+    const { objeto, handleChange, acaoCadastrar,  alerta } = useContext(TarefasContext);
 
     return (
         <div className="modal fade" id="modalEdicao" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">            
