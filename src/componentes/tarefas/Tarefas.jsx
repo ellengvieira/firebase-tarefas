@@ -36,7 +36,7 @@ function Tarefas() {
     useEffect(() => {
         if (user?.uid != null) {
             const uid = user?.uid;
-            const colRef = collection(db, "posts");
+            const colRef = collection(db, "tarefas");
             const q = query(colRef, where("uid", "==", uid))
             onSnapshot(q, (querySnapshot) => {
                 setListaObjetos(querySnapshot.docs.map(doc => ({
